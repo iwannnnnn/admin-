@@ -1,0 +1,81 @@
+<section *ngIf="load" id="cover" class="min-vh-100">
+    <div id="cover-caption">
+
+        <div id="Full_Name">
+            <span>Full Name</span>
+        </div>
+        <div id="fullnameValue">
+            <span>{{user.firstName}} {{user.lastName}}</span>
+        </div>
+        <div id="Email">
+            <span>Email</span>
+        </div>
+        <div id="usernameValue">
+            <span>{{user.userName}}</span>
+        </div>
+        <div id="Phone">
+            <span>Phone</span>
+        </div>
+        <div id="phonevalue">
+            <span>{{user.phone}}</span>
+        </div>
+        <div id="Status">
+            <span>Status</span>
+        </div>
+        <div id="statusvalue">
+            <span>{{user.status}}</span>
+        </div>
+        <div id="Connected_Users">
+            <span>Connected Users</span>
+        </div>
+        <div class="connectedvalue">
+
+            <div id="ConnectedValues" *ngFor="let element of user.connected;">
+                <span>{{element.firstName}} {{element.lastName}}</span>
+
+            </div>
+        </div>
+
+        <table class="tblLocation"  >
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 55%;">Location</th>
+                    <th scope="col" style="width: 30%;">Date</th>
+                    <th scope="col" style="width: 15%;">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="border_bottom" *ngFor="let element of locations;">
+
+                    <td>{{element.address}}</td>
+                    <td>{{element.date}}</td>
+                    <td>{{element.time}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <ngb-pagination class="pagination" [collectionSize]="totalItems" [maxSize]="3" [pageSize]="itemsPerPage"
+            [(page)]="page" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)">
+        </ngb-pagination>
+
+        <!-- <div id="Location">
+            <span>Location</span>
+        </div>
+        <div id="Date">
+            <span>Date</span>
+        </div>
+        <div id="Time">
+            <span>Time</span>
+        </div>
+        <div id="locations" *ngFor="let element of user.locations;">
+            <span>{{element.address}}</span>
+            <span>{{element.date}}</span>
+            <span>{{element.time}}</span>
+
+        </div> -->
+    </div>
+    <div id="Icon_feather_edit_3">
+        <img src="../../assets/Icon feather-edit-3.svg" (click)="edit(user.id)">
+    </div>
+</section>

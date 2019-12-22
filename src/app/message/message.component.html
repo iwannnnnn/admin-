@@ -1,0 +1,37 @@
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="container">
+            <div class="row text-white">
+                <div id="Group_3">
+                    <img src="../../assets/Group 3.svg" width="100%" height="100%">
+
+                </div>
+                <div class="Current_Message" *ngIf="!editMode">
+                    <span>Current Message</span>
+                </div>
+                <div class="Current_Message" *ngIf="editMode">
+                    <span>Change Message</span>
+                </div>
+                <button *ngIf="!editMode" type="button" class="Rectangle_1767" (click)="edit()">Edit</button>
+
+                <button *ngIf="editMode" type="button" class="Rectangle_1767"
+                    style="background-color: rgba(5,196,107,1);" (click)="save()">Save</button>
+
+                <div id="Hello_FullUserName___We_hear_y">
+                    <span name="messageText" id="messageText" contenteditable="editMode" [innerHTML]="request.messageText"></span>
+                </div>
+                <!-- <textarea id="Hello_FullUserName___We_hear_y" name="messageText" rows="30"
+                    [(ngModel)]="request.messageText" #message='ngModel'> 
+                </textarea>-->
+                <div *ngIf="editMode" id="FullUserName___Add_User_Full_N">
+                    <span>FullUserName </span><span style="font-style:normal;font-weight:normal;">- Add User Full Name
+                        in message.</span>
+                </div>
+                <div *ngIf="editMode" id="CurrentUserLocation___Add_User">
+                    <span>CurrentUserLocation </span><span style="font-style:normal;font-weight:normal;">- Add User
+                        Current Location in message.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

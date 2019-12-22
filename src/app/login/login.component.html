@@ -1,0 +1,24 @@
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="container">
+            <img src="../../assets/wit-logo2.svg" class="wit_logo">
+            <div id="Sign_In_to_Admin">
+                <span>Sign In to Admin</span>
+            </div>
+            <span class="message">{{message}}</span>
+
+            <form (ngSubmit)="signnin()" class=" justify-content-center">
+                <input name="email" id="Email" #mail='ngModel' [(ngModel)]="data.email" type="email" required
+                    placeholder="Email" pattern="emailPattern">
+                <input name="password" id="Password" [(ngModel)]=" data.password" #password='ngModel' type="password"
+                    placeholder="Password" required minlength="5">
+                <button type="submit" class="signin" >Sign in</button>
+
+
+
+            </form>
+        </div>
+
+
+    </div>
+</section>

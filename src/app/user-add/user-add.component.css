@@ -1,0 +1,166 @@
+input.apple-switch {
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #ffffff;
+    transition-duration: 200ms;
+}
+
+input.apple-switch:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input.apple-switch:checked {
+    border-color: #4ED164;
+    box-shadow: inset 20px 0 0 0 #4ED164;
+}
+
+input.apple-switch:checked:after {
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+    position: absolute;
+    width: 286.5px;
+    border-bottom: 3px solid #6A7A8C;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 285px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+::placeholder {
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 25px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Group_15 {
+    position: relative;
+    width: 1281.5px;
+    height: 428px;
+    left: 319px;
+    overflow: visible;
+}
+
+#Connected_Users {
+    position: absolute;
+    left: 724.5px;
+    top: 0px;
+    overflow: visible;
+    width: 198px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#All_Users {
+    position: absolute;
+    left: 1095.5px;
+    top: 0px;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+.savebtn {
+    background-color: "#1D272E";
+}
+
+.saveInput {
+    border-bottom: #6A7A8C solid 3px;
+}
+
+.Path_27 {
+    overflow: visible;
+    position: absolute;
+    width: 21px;
+    height: 3px;
+    left: 977.301px;
+    top: 254.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Path_26 {
+    overflow: visible;
+    position: absolute;
+    width: 11.121px;
+    height: 19.242px;
+    left: 977.301px;
+    top: 247px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Path_28 {
+    overflow: visible;
+    position: absolute;
+    width: 11.121px;
+    height: 19.242px;
+    left: 987.801px;
+    top: 203px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Path_29 {
+    overflow: visible;
+    position: absolute;
+    width: 21px;
+    height: 3px;
+    left: 977.301px;
+    top: 210.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+.deleteuser{
+    
+    position: fixed;
+    width: 19.296px;
+    height: 21.44px;
+    left: 1820px;
+    top: 208px;
+    overflow: visible;
+}

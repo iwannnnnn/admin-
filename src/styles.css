@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* input {
+    position: absolute;
+    appearance: none;
+    width: 40%;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.1px;
+} */
+
+@font-face {
+    font-family: "Arial";
+    src: url("assets\arlrdbd.ttf") format("truetype");
+}
+
+.page-item {
+    border: rgba(106, 122, 140, 0.4) solid 0.5px;
+    /* opacity: 40%; */
+    white-space: nowrap;
+    text-align: center;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+.page-item.active .page-link {
+    color: rgba(29, 39, 46, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+root {
+    --web-view-ids: Add_New_User_Screen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+}
+
+button {
+    background-color: #1D272E;
+    color: white;
+    background-color: rgba(29, 39, 46, 1);
+    white-space: nowrap;
+    text-align: center;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    vertical-align: middle;
+    /* font-weight: bold; */
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 0px auto;
+    border-radius: 5%;
+    width: 180px;
+    height: 60px;
+}
+
+#cover-caption {
+    position: absolute;
+    box-sizing: border-box;
+    width: 1820px;
+    height: 850px;
+    overflow: visible;
+    left: 50px;
+    top: 178px;
+    background: white;
+    /* background-color: rgba(242, 243, 245, 1); */
+    overflow: hidden;
+    --web-view-name: Add New User Screen;
+    --web-view-id: Add_New_User_Screen;
+    --web-enable-deep-linking: true;
+}
+
+#fromwraper {
+    position: relative;
+    top: 35%;
+}
+
+#cover {
+    background: #E5E5E5;
+}
+
+@media (min-width: 300px) {
+
+    .page-item {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 400px) {}
+
+@media (min-width: 1000px) {
+    #cover-caption {
+        position: absolute;
+        box-sizing: border-box;
+        width: 980px;
+        height: 550px;
+        overflow: visible;
+        left: 30px;
+        top: 100px;
+        background: white;
+        /* background-color: rgba(242, 243, 245, 1); */
+        overflow: hidden;
+        --web-view-name: Add New User Screen;
+        --web-view-id: Add_New_User_Screen;
+        --web-enable-deep-linking: true;
+    }
+}
+
+@media (min-width: 1500px) {
+    #cover-caption {
+        position: absolute;
+        box-sizing: border-box;
+        width: 1820px;
+        height: 850px;
+        overflow: visible;
+        left: 50px;
+        top: 178px;
+        background: white;
+        /* background-color: rgba(242, 243, 245, 1); */
+        overflow: hidden;
+        --web-view-name: Add New User Screen;
+        --web-view-id: Add_New_User_Screen;
+        --web-enable-deep-linking: true;
+    }
+}

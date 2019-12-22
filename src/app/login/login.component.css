@@ -1,0 +1,475 @@
+#cover-caption {
+    background-color: white;
+}
+
+#cover {
+    background-color: white;
+}
+
+.wit_logo {
+    position: fixed;
+    overflow: visible;
+    width: 316px;
+    height: 277px;
+    left: 776px;
+    top: 145px;
+}
+
+#Sign_In_to_Admin {
+    position: fixed;
+    left: 841px;
+    top: 453px;
+    overflow: visible;
+    width: 211px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+.message {
+    position: fixed;
+    left: 822px;
+    top: 549px;
+    overflow: visible;
+    width: 234px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 63, 52, 1);
+    letter-spacing: 0.1px;
+}
+
+::placeholder {
+    white-space: nowrap;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.1px;
+    opacity: 1;
+    /* Firefox */
+}
+
+#Email {
+    background-color: rgba(175, 172, 53, 0.502);
+    white-space: nowrap;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+    border-radius: 10px;
+    text-indent: 25px;
+    font-weight: bold;
+    position: fixed;
+    overflow: visible;
+    width: 445px;
+    height: 60px;
+    left: 723px;
+    top: 606px;
+}
+
+#Password {
+    position: fixed;
+    overflow: visible;
+    width: 445px;
+    height: 60px;
+    left: 723px;
+    top: 686px;
+    background-color: rgba(175, 172, 53, 0.502);
+    text-align: left;
+    font-size: 18px;
+    color: rgba(29, 39, 46, 1);
+    border-radius: 10px;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    text-indent: 25px;
+}
+
+.signin {
+    position: fixed;
+    overflow: visible;
+    width: 180px;
+    height: 57px;
+    left: 855px;
+    top: 766px;
+}
+
+@media (min-width: 300px) {
+    .wit_logo {
+        position: fixed;
+        overflow: visible;
+        width: 90px;
+        height: 100px;
+        left: 130px;
+        top: 45px;
+    }
+    #Sign_In_to_Admin {
+        position: fixed;
+        left: 135px;
+        top: 135px;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+    }
+    .message {
+        position: fixed;
+        left: 120px;
+        top: 170px;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        color: rgba(255, 63, 52, 1);
+        letter-spacing: 0.1px;
+    }
+    ::placeholder {
+        white-space: nowrap;
+        text-align: left;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 0.1px;
+        opacity: 1;
+        /* Firefox */
+    }
+    #Email {
+        background-color: rgba(175, 172, 53, 0.502);
+        white-space: nowrap;
+        text-align: left;
+        font-size: 12px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+        border-radius: 10px;
+        /*   text-indent: 25px;
+       */
+        font-weight: bold;
+        position: fixed;
+        overflow: visible;
+        left: 77px;
+        top: 200px;
+        height: 40px;
+        width: 200px;
+    }
+    #Password {
+        position: fixed;
+        overflow: visible;
+        background-color: rgba(175, 172, 53, 0.502);
+        text-align: left;
+        font-size: 10px;
+        color: rgba(29, 39, 46, 1);
+        border-radius: 10px;
+        letter-spacing: 0.1px;
+        font-weight: bold;
+        left: 77px;
+        top: 250px;
+        height: 40px;
+        width: 200px;
+        /* text-indent: 25px; */
+    }
+    .signin {
+        position: fixed;
+        overflow: visible;
+        width: 100px;
+        height: 35px;
+        left: 130px;
+        top: 320px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px) {
+    .wit_logo {
+        position: fixed;
+        overflow: visible;
+        width: 120px;
+        height: 200px;
+        left: 170px;
+        top: 45px;
+    }
+    #Sign_In_to_Admin {
+        position: fixed;
+        left: 190px;
+        top: 220px;
+        overflow: visible;
+        width: 80px;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+    }
+    .message {
+        position: fixed;
+        left: 170px;
+        top: 250px;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        color: rgba(255, 63, 52, 1);
+        letter-spacing: 0.1px;
+    }
+    ::placeholder {
+        white-space: nowrap;
+        text-align: left;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 0.1px;
+        opacity: 1;
+        /* Firefox */
+    }
+    #Email {
+        background-color: rgba(175, 172, 53, 0.502);
+        white-space: nowrap;
+        text-align: left;
+        font-size: 12px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+        border-radius: 10px;
+        /*   text-indent: 25px;
+       */
+        font-weight: bold;
+        position: fixed;
+        overflow: visible;
+        left: 130px;
+        top: 300px;
+        height: 40px;
+        width: 200px;
+    }
+    #Password {
+        position: fixed;
+        overflow: visible;
+        background-color: rgba(175, 172, 53, 0.502);
+        text-align: left;
+        font-size: 10px;
+        color: rgba(29, 39, 46, 1);
+        border-radius: 10px;
+        letter-spacing: 0.1px;
+        font-weight: bold;
+        left: 130px;
+        top: 350px;
+        height: 40px;
+        width: 200px;
+        /* text-indent: 25px; */
+    }
+    .signin {
+        position: fixed;
+        overflow: visible;
+        width: 100px;
+        height: 40px;
+        left: 180px;
+        top: 420px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wit_logo {
+        position: fixed;
+        overflow: visible;
+        width: 316px;
+        height: 277px;
+        left: 776px;
+        top: 45px;
+    }
+    #Sign_In_to_Admin {
+        position: fixed;
+        left: 841px;
+        top: 453px;
+        overflow: visible;
+        width: 211px;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+    }
+    .message {
+        position: fixed;
+        left: 822px;
+        top: 549px;
+        overflow: visible;
+        width: 234px;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(255, 63, 52, 1);
+        letter-spacing: 0.1px;
+    }
+    ::placeholder {
+        white-space: nowrap;
+        text-align: left;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 0.1px;
+        opacity: 1;
+        /* Firefox */
+    }
+    #Email {
+        background-color: rgba(175, 172, 53, 0.502);
+        white-space: nowrap;
+        text-align: left;
+        font-size: 18px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+        border-radius: 10px;
+        text-indent: 25px;
+        font-weight: bold;
+        position: fixed;
+        overflow: visible;
+        width: 445px;
+        height: 60px;
+        left: 723px;
+        top: 606px;
+    }
+    #Password {
+        position: fixed;
+        overflow: visible;
+        width: 445px;
+        height: 60px;
+        left: 723px;
+        top: 686px;
+        background-color: rgba(175, 172, 53, 0.502);
+        text-align: left;
+        font-size: 18px;
+        color: rgba(29, 39, 46, 1);
+        border-radius: 10px;
+        letter-spacing: 0.1px;
+        font-weight: bold;
+        text-indent: 25px;
+    }
+    .signin {
+        position: fixed;
+        overflow: visible;
+        width: 180px;
+        height: 57px;
+        left: 855px;
+        top: 766px;
+        font-size: 22px;
+    }
+}
+
+
+@media (min-width: 1900px) {
+    .wit_logo {
+        position: fixed;
+        overflow: visible;
+        width: 316px;
+        height: 277px;
+        left: 776px;
+        top: 145px;
+    }
+    
+    #Sign_In_to_Admin {
+        position: fixed;
+        left: 841px;
+        top: 453px;
+        overflow: visible;
+        width: 211px;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+    }
+    
+    .message {
+        position: fixed;
+        left: 822px;
+        top: 549px;
+        overflow: visible;
+        width: 234px;
+        white-space: nowrap;
+        text-align: left;
+        font-family:  Arial Rounded MT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(255, 63, 52, 1);
+        letter-spacing: 0.1px;
+    }
+    
+    ::placeholder {
+        white-space: nowrap;
+        text-align: left;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 0.1px;
+        opacity: 1;
+        /* Firefox */
+    }
+    
+    #Email {
+        background-color: rgba(175, 172, 53, 0.502);
+        white-space: nowrap;
+        text-align: left;
+        font-size: 18px;
+        color: rgba(29, 39, 46, 1);
+        letter-spacing: 0.1px;
+        border-radius: 10px;
+        text-indent: 25px;
+        font-weight: bold;
+        position: fixed;
+        overflow: visible;
+        width: 445px;
+        height: 60px;
+        left: 723px;
+        top: 606px;
+    }
+    
+    #Password {
+        position: fixed;
+        overflow: visible;
+        width: 445px;
+        height: 60px;
+        left: 723px;
+        top: 686px;
+        background-color: rgba(175, 172, 53, 0.502);
+        text-align: left;
+        font-size: 18px;
+        color: rgba(29, 39, 46, 1);
+        border-radius: 10px;
+        letter-spacing: 0.1px;
+        font-weight: bold;
+        text-indent: 25px;
+    }
+    
+    .signin {
+        position: fixed;
+        overflow: visible;
+        width: 180px;
+        height: 57px;
+        left: 855px;
+        top: 766px;
+    }
+    }

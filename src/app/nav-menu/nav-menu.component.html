@@ -1,0 +1,78 @@
+<nav class="navbar navbar-default"  role="navigation">
+
+  <ul class="nav justify-content-end4">
+
+    <div class="wit_logo">
+      <img src="../../assets/wit-logo.svg" width="100%" height="100%">
+    </div>
+
+    <li class="nav-item dashboard">
+      <a routerLink="dashboard" class="nav-link" routerLinkActive="active">Dashboard</a>
+    </li>
+    <li class="nav-item message">
+      <a routerLink="message" class="nav-link" routerLinkActive="active">Messages</a>
+    </li>
+
+    <li class="nav-item ">
+      <button id="signout" type="button" (click)="signout()" class="navbar-btn">
+        Sign Out
+      </button>
+      
+    </li>
+
+    <li class="nav-item ">
+
+      <a href="#" (click)="signout()" id="signoutlink"  class="nav-link" routerLinkActive="active">Sign Out</a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- 
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#exampleModal111"
+        aria-expanded="false">
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="modal fade" id="exampleModal111" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <nav class="navbar navbar-default" role="navigation" *ngIf="login">
+
+              <ul class="nav justify-content-end4">
+
+
+                <li class="nav-item dashboard">
+                  <a routerLink="dashboard" class="nav-link" routerLinkActive="active">Dashboard</a>
+                </li>
+                <li class="nav-item message">
+                  <a routerLink="message" class="nav-link" routerLinkActive="active">Messages</a>
+                </li>
+
+                <li class="nav-item ">
+                  <button id="signout" type="button" (click)="signout()" class="navbar-btn">
+                    Sign Out
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+</nav>   -->

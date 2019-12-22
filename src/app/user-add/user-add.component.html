@@ -1,0 +1,186 @@
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="deleteuser" (click)="deleteOpee()">
+            <img src="../../assets/Icon feather-trash-2.svg">
+        </div>
+        <div id="fromwraper" class=" row">
+            <div id="Group_15">
+                <div _ngcontent-dbe-c2="" _ngcontent-pda-c2=""
+                    class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4" style="
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            ">
+                    <form *ngIf="load" [formGroup]="form" (ngSubmit)="save()" class=" justify-content-center" style="
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            ">
+
+                        <input name="firstname" formControlName="firstname" [(ngModel)]="data.firstname" type="text"
+                            placeholder="First name" style="
+                left: 0px;
+                top: 75px;
+                position: absolute;
+            ">
+                        <input name="lastname" formControlName="lastname" [(ngModel)]="data.lastname" type="text"
+                            placeholder="Last name" style="
+                left: 300px;
+                position: absolute;
+                top: 75px;">
+                        <input name=" email" formControlName="email" [(ngModel)]="data.email" type="email"
+                            placeholder="Email" style="
+                left: 0px;
+                top: 150px;
+                position: absolute;
+            ">
+                        <input name="phone" formControlName="phone" [(ngModel)]="data.phone" type="tel"
+                            placeholder="Phone" style="
+                top: 150px;
+                left: 300px;
+                position: absolute;
+            ">
+
+                        <select formControlName="permission" name="permission" [(ngModel)]="data.permission"
+                            class="form-control"
+                            style="width: 150px;margin-left: 12p;left: 0px;top: 240px;position: absolute;">
+                            <option value="0" name="permission">Permission</option>
+                            <option *ngFor="let permission of permissionData" value={{permission.id}}
+                                name="permissionopt">
+                                {{permission.name}}
+                            </option>
+                        </select>
+
+                        <input name="pinCode" formControlName="pinCode" [(ngModel)]="data.pinCode" placeholder="Pin"
+                            style="
+                top: 240px;
+                left: 160px;
+                position: absolute;
+                width: 100px;
+            " type="password">
+                        <input name="passworD" formControlName="password" [(ngModel)]="data.password" type="password"
+                            placeholder="Password" style="
+                top: 240px;
+                position: absolute;
+                left: 300px;
+            " type="password">
+                        <input class="apple-switch" type="checkbox" 
+                        [checked]="isActive"
+                        (change)="isActive = !isActive" id="chstatus" style="
+                            position: absolute;
+                            overflow: visible;
+                            width: 65px;
+                            height: 34px;
+                            left: 263.5px;
+                            top: 284px;
+                        ">
+                        <button class="btn btn-default btn-lg" [ngClass]="btnClass" type="submit" style="
+                               position: absolute;
+                               overflow: visible;
+                               width: 180px;
+                               height: 57px;
+                               left: 206px;
+                               top: 371px;
+                               white-space: nowrap;
+                               text-align: left;
+                               font-family: Arial Rounded MT;
+                               font-style: normal;
+                               font-weight: bold;
+                               font-size: 22px;
+                               color: rgba(106,122,140,0.4);
+                               letter-spacing: 0.1px;
+                           ">{{saveCaption}}</button>
+
+                    </form>
+                </div>
+                <div id="Connected_Users">
+                    <span>Connected Users</span>
+                </div>
+                <ul class="list-group" style="
+                border: 1px black solid;
+                position: absolute;
+                overflow: visible;
+                width: 266px;
+                height: 390px;
+                left: 689.5px;
+                top: 38px;">
+                    <li *ngFor="let element of conectionusers; let i=index"
+                        [ngClass]="{'active':selectedConectedIndex  == i, 'list-group-item': true}"
+                        (click)="setremoveconnection(element,i)" style="
+                        overflow: visible;
+                        width: 125px;
+                        white-space: nowrap;
+                        text-align: left;
+                        font-family:  Arial Rounded MT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: rgba(29,39,46,1);
+                        letter-spacing: 0.1px;">
+                        {{element.firstName}} {{element.lastName}}
+                    </li>
+                </ul>
+
+                <div (click)="adduserConnectio()">
+                    <svg class=" Path_26" viewBox="6 15 7.5 15">
+                        <path fill="transparent" stroke="rgba(29,39,46,1)" stroke-width="3px" stroke-linejoin="round"
+                            stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_26"
+                            d="M 13.5 15 L 6 22.5 L 13.5 30">
+                        </path>
+                    </svg>
+                    <svg class="Path_27" viewBox="6 22.5 18 3">
+                        <path fill="transparent" stroke="rgba(29,39,46,1)" stroke-width="3px" stroke-linejoin="round"
+                            stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_27"
+                            d="M 24 22.5 L 6 22.5">
+                        </path>
+                    </svg>
+
+                </div>
+
+                <div (click)="removeUserConnectio()">
+                    <svg class="Path_28" viewBox="22.5 6 7.5 15">
+                        <path fill="transparent" stroke="rgba(106,122,140,0.4)" stroke-width="3px"
+                            stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto"
+                            id="Path_28" d="M 22.5 21 L 30 13.5 L 22.5 6">
+                        </path>
+                    </svg>
+                    <svg class="Path_29" viewBox="12 13.5 18 3">
+                        <path fill="transparent" stroke="rgba(106,122,140,0.4)" stroke-width="3px"
+                            stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto"
+                            id="Path_29" d="M 12.00000095367432 13.5 L 30 13.5">
+                        </path>
+                    </svg>
+                </div>
+
+                <div id="All_Users">
+                    <span>All Users</span>
+                </div>
+                <ul class="list-group" style="
+                position: absolute;
+                border: 1px black solid;
+                overflow: visible;
+                width: 266px;
+                height: 390px;
+                left: 1015.5px;
+                top: 38px;
+            ">
+                    <li *ngFor="let element of notconectionusers; let i=index"
+                        [ngClass]="{'active':selectedIndex  == i, 'list-group-item': true}"
+                        (click)="setconnection(element,i)" style="
+                        overflow: visible;
+                        width: 125px;
+                        white-space: nowrap;
+                        text-align: left;
+                        font-family:  Arial Rounded MT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: rgba(29,39,46,1);
+                        letter-spacing: 0.1px;">
+                        {{element.firstName}} {{element.lastName}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

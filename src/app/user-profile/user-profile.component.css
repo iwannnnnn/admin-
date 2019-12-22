@@ -1,0 +1,255 @@
+#Full_Name {
+    position: fixed;
+    left: 152px;
+    top: 268px;
+    overflow: visible;
+    width: 112px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Email {
+    position: fixed;
+    left: 152px;
+    top: 386px;
+    overflow: visible;
+    width: 62px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Phone {
+    position: fixed;
+    left: 152px;
+    top: 468px;
+    overflow: visible;
+    width: 71px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Status {
+    position: fixed;
+    left: 152px;
+    top: 550px;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Connected_Users {
+    position: fixed;
+    left: 152px;
+    top: 632px;
+    overflow: visible;
+    width: 190px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#fullnameValue {
+    position: fixed;
+    left: 149px;
+    top: 287px;
+    overflow: visible;
+    width: 435px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+#usernameValue {
+    position: fixed;
+    left: 152px;
+    top: 409px;
+    overflow: visible;
+    width: 388px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+#phonevalue {
+    position: fixed;
+    left: 152px;
+    top: 491px;
+    overflow: visible;
+    width: 163px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+#statusvalue {
+    position: fixed;
+    left: 152px;
+    top: 573px;
+    overflow: visible;
+    width: 90px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(5, 196, 107, 1);
+    letter-spacing: 0.1px;
+}
+
+.connectedvalue {
+    position: fixed;
+    left: 152px;
+    top: 655px;
+    overflow: visible;
+    width: 177px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+#Icon_feather_edit_3 {
+    position: fixed;
+    width: 22.543px;
+    height: 21.443px;
+    left: 1817px;
+    top: 208.24px;
+    overflow: visible;
+}
+
+
+.tblLocation{
+    width: 1045px;
+    position: fixed;
+    left: 745px;
+    top: 268px;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+table.tblLocation>tbody>tr{
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(29,39,46,0.702);
+    letter-spacing: 0.1px;
+    border-top: rgba(106, 122, 140, 0.4) solid 1xpx;
+    height: 60px;
+    vertical-align: middle;
+    text-align: left;
+}
+.pagination{
+    
+    position: fixed;
+    overflow: visible;
+    width: 38px;
+    height: 38px;
+    left: 1517px;
+    top: 940px;
+}
+#Location {
+    position: fixed;
+    left: 745px;
+    top: 268px;
+    overflow: visible;
+    width: 93px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Date {
+    position: fixed;
+    left: 1414px;
+    top: 268px;
+    overflow: visible;
+    width: 52px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Time {
+    position: fixed;
+    left: 1655px;
+    top: 268px;
+    overflow: visible;
+    width: 54px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}

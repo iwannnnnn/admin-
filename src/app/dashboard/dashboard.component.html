@@ -1,0 +1,206 @@
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="table-responsive">
+
+            <table class="table" id="tbl">
+                <thead class="thTbl">
+                    <tr _ngcontent-xal-c2="">
+                        <th scope="col" style="
+            width: 25%;
+        ">user</th>
+                        <th scope="col" style="
+            width: 15%;
+        ">Phone</th>
+                        <th scope="col" style="
+            width: 25%;
+        ">Connected</th>
+                        <th scope="col" style="
+            width: 15%;
+        ">Status</th>
+                        <th scope="col" style="
+            width: 15%;
+        ">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border_bottom" *ngFor="let user of users">
+                        <td>
+                            <div class="fullname">{{user.firstName}} {{user.lastName}}</div>
+                            <div class="email"> {{user.userName}}</div>
+                        </td>
+                        <td class="phone">{{user.phone}}</td>
+                        <td id="connections">
+
+                            <div *ngFor="let element of user.connected; let i=index">
+
+
+                                <div *ngIf="i==0" class="connectionfirst">
+                                    <span>
+                                        {{element}}
+                                    </span>
+                                </div>
+                                <div *ngIf="i>=1 && i<3" class="conection">
+
+                                    <span>
+                                        {{element}}
+                                    </span>
+                                </div>
+
+
+                                <div *ngIf="i==3" class="connectionMoreThen">
+
+                                    <span>
+                                        +{{user.connected.length-3}}
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div *ngIf="user.status==1" class="stsActive"></div>
+                            <div *ngIf="user.status!=1" class="stsInActive"></div>
+
+
+                        </td>
+                        <td style="display: flex;">
+                            <div class="user">
+                                <img src="../../assets/Icon feather-user.svg" id="Icon_feather-user"
+                                    (click)="preview(user.id)" width="100%" height="100%">
+
+                            </div>
+                            <div class="editUser">
+
+                                <img src="../../assets/Icon feather-edit-3.svg" id="Icon_feather-edit-3"
+                                    (click)="edit(user.id)" width="100%" height="100%">
+                            </div>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="mobileTbl">
+            <div *ngFor="let user of users; let odd = odd" [ngClass]="odd ? 'odd' : 'even'">
+
+                <div class="row">
+                    <div class="caption">
+                        NAME
+                    </div>
+
+                </div>
+
+                <div class=" row namestatus">
+                    <div class="coll-2 ">
+
+                        <div *ngIf="user.status==1" class="stsActive"></div>
+                        <div *ngIf="user.status!=1" class="stsInActive"></div>
+
+
+                    </div>
+                    <div class="coll-10  caption fullname">{{user.firstName}} {{user.lastName}}</div>
+
+
+                </div>
+                <div class=" row">
+                    <div class="caption">
+
+                        EMAIL
+                    </div>
+                </div>
+                <div class=" row">
+
+                    <div class="email caption"> {{user.userName}}</div>
+
+                </div>
+
+                <div class=" row">
+                    <div class="caption">
+                        PHONE
+                    </div>
+
+                </div>
+                <div class="row  ">
+
+                    <div class="caption phone">{{user.phone}}</div>
+                </div>
+                <div class=" row">
+
+                    <div class="caption">
+                        CONNECTED
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="connected">
+                        <div *ngFor="let element of user.connected; let i=index" class="conitem">
+
+
+                            <div *ngIf="i==0" class="connectionfirst">
+                                <span>
+                                    {{element}}
+                                </span>
+                            </div>
+                            <div *ngIf="i>=1 && i<3" class="conection">
+
+                                <span>
+                                    {{element}}
+                                </span>
+                            </div>
+
+
+                            <div *ngIf="i==3" class="connectionMoreThen">
+
+                                <span>
+                                    +{{user.connected.length-3}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="caption">
+                        ACTION
+                    </div>
+                </div>
+
+                <div class="actions row" style="display: flex;">
+                    <div class="user ">
+                        <img src="../../assets/Icon feather-user.svg" id="Icon_feather-user" (click)="preview(user.id)"
+                            width="100%" height="100%">
+
+                    </div>
+                    <div class="editUser ">
+
+                        <img src="../../assets/Icon feather-edit-3.svg" id="Icon_feather-edit-3" (click)="edit(user.id)"
+                            width="100%" height="100%">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <ngb-pagination class="pagination" [collectionSize]="totalItems" [maxSize]="3" [pageSize]="itemsPerPage"
+            [(page)]="page" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)">
+        </ngb-pagination>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" class="Ellipse_D"
+            (click)="add()">
+            <circle id="Ellipse_D" data-name="Ellipse_D" cx="40" cy="40" r="40" fill="#05c46b" />
+        </svg>
+
+
+        <div id="Icon_feather_user_plus-d">
+            <img src="../../assets/add-user.svg" width="100%" height="100%" style="opacity: 100%;">
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" class="Ellipse_52"
+        (click)="add()">
+        <circle id="Ellipse_52" data-name="Ellipse 52" cx="40" cy="40" r="40" fill="#05c46b" />
+    </svg>
+
+
+    <div id="Icon_feather_user_plus">
+        <img src="../../assets/add-user.svg" width="100%" height="100%" style="opacity: 100%;">
+    </div>
+</section>

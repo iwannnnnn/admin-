@@ -1,0 +1,126 @@
+#cover-caption {
+    position: absolute;
+    width: 1162.361px;
+    height: 511.064px;
+    left: 498.002px;
+    top: 284px;
+    overflow: visible;
+    background-color: rgba(242, 243, 245, 1);
+}
+
+#cover {
+    background: rgba(242, 243, 245, 1);
+}
+
+#Group_3 {
+    position: absolute;
+    width: 341.912px;
+    height: 511.064px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.Rectangle_1767 {
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    height: 33px;
+    left: 678.361px;
+    top: 44px;
+    text-align: center;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.1px;
+}
+
+#Edit {
+    position: absolute;
+    left: 707.361px;
+    top: 50px;
+    overflow: visible;
+    width: 31px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.1px;
+}
+
+#FullUserName___Add_User_Full_N {
+    position: absolute;
+    left: 433.998px;
+    top: 525px;
+    overflow: visible;
+    width: 318px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+#CurrentUserLocation___Add_User {
+    position: absolute;
+    left: 433.998px;
+    top: 544px;
+    overflow: visible;
+    width: 406px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+.Current_Message {
+    position: absolute;
+    left: 424.361px;
+    top: 44px;
+    overflow: visible;
+    width: 235px;
+    white-space: nowrap;
+    text-align: left;
+    font-family:  Arial Rounded MT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(106, 122, 140, 0.4);
+    letter-spacing: 0.1px;
+}
+
+#Hello_FullUserName___We_hear_y {
+    position: absolute;
+    left: 424.361px;
+    top: 147px;
+    overflow: hidden;
+    width: 739px;
+    height: 322px;
+    text-align: left;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(29, 39, 46, 1);
+    letter-spacing: 0.1px;
+}
+
+@media (min-width: 300px) {}
+
+@media (min-width: 400px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1900px) {}
